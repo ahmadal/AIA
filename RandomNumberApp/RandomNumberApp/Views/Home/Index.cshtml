@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html ng-app="RandomNumberApp" ng-controller="LandingPageController">
+<head>
+    <title ng-bind="title"></title>
+</head>
+<body>
+    <p>Please enter the length of the array: </p>
+    <input type="text" ng-model="models.randomNumberLength" />
+    <h1>{{models.randomNumberLength}}</h1>
+    <h1>{{models.results}}</h1>
+
+    <table>
+        <tr ng-repeat="integer in models.results track by $index">
+            <td>{{ integer }}</td>
+        </tr>
+    </table>
+
+    <button ng-click="getRandomNumbers()">Get Random Numbers</button>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    @Scripts.Render("~/bundles/RandomNumberApp")
+</body>
+</html>
