@@ -2,6 +2,7 @@
 <html ng-app="RandomNumberApp" ng-controller="LandingPageController">
 <head>
     <title ng-bind="title"></title>
+    <link rel="stylesheet" href="~/bower_components/angular-chart.js/dist/angular-chart.css" />
 </head>
 <body>
     <p>
@@ -27,5 +28,10 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
     @Scripts.Render("~/bundles/RandomNumberApp")
+    <script src="~/bower_components/angular/angular.min.js"></script>
+    <script src="~/bower_components/Chart.js/Chart.min.js"></script>
+    <script src="~/bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+
 </body>
+
 </html>
