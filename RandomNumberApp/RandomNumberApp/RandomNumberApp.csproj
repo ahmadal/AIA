@@ -132,7 +132,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\Controllers\LandingPageController.js" />
     <Content Include="Scripts\Controllers\RandomNumberApp.js" />
-    <Content Include="Scripts\Factories\GetRandomNumbersFactory.js" />
+    <Content Include="Scripts\Controllers\GetRandomNumbersFactory.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

@@ -1,27 +1,22 @@
-﻿var LandingPageController = function ($scope, $http) {
+﻿var LandingPageController = function ($scope, $http, GetRandomNumbersFactory) {
     $scope.models = {
         randomNumberLength: '100',
         results: ''
     };
-    $scope.getRandomNumbers = function () {
-        $http.get("https://qrng.anu.edu.au/API/jsonI.php?length=" + $scope.models.randomNumberLength + "&type=uint8")
-        .then(function sucessCallback(response) {
-
-            if (response.data['success'])
-                $scope.models.results = response.data['data'];
+    $scope.getRandomNumbers = function (length) {
+        GetRandomNumbersFactory(length).then(function (success) {
+            console.log("it is: " + success.success);
+            if (success.success)
+                $scope.models.results = success.data;
             else {
                 $scope.models.results = '';
-                alert('Something wasn\'t quite right.\n' + response);
-
+                console.log("Something went wrong. The result success state was false.")
             }
-                
-        }, function errorCallback(error) {
-
-            console.log("error http get in scope.getRandomNumbers method: " + error);
-            
-
+        },
+        function (error) {
+            console.log("error in the landing page controller getRandomeNumbers, GetRandomNumbersFactory: " + error)
         });
     }
 }
 
-LandingPageController.$inject = ['$scope','$http'];
+LandingPageController.$inject = ['$scope','$http', 'GetRandomNumbersFactory'];
