@@ -1,7 +1,10 @@
 ﻿var GetRandomNumbersFactory = function ($http, $q) {
     return function (length) {
         var deferredObject = $q.defer();
-        $http.get("https://qrng.anu.edu.au/API/jsonI.php?length=" + length + "&type=uint8")
+        $http({
+            method: 'GET',
+            url: "https://qrng.anu.edu.au/API/jsonI.php?length=" + length + "&type=uint8"
+        })
         .then(function sucessCallback(response) {
             console.log("success");
             deferredObject.resolve(response.data);

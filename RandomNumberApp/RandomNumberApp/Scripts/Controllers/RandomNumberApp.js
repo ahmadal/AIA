@@ -2,3 +2,4 @@
 
 RandomNumberApp.controller('LandingPageController', LandingPageController);
 RandomNumberApp.factory('GetRandomNumbersFactory', GetRandomNumbersFactory);
+

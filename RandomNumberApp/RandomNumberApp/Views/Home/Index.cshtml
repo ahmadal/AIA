@@ -2,35 +2,48 @@
 <html ng-app="RandomNumberApp" ng-controller="LandingPageController">
 <head>
     <title ng-bind="title"></title>
-    <link rel="stylesheet" href="~/bower_components/angular-chart.js/dist/angular-chart.css" />
-</head>
-<body>
-    <p>
-        Please enter the length of the array:
-        <input type="text" ng-model="models.randomNumberLength" />
-    </p>
-    <h1>{{models.randomNumberLength}}</h1>
-
-    <table>
-        <tr ng-repeat="integer in models.results track by $index">
-            <td>{{ integer }}</td>
-        </tr>
-    </table>
-    <p>
-        As per requirement number 2:
-        <button ng-click="getRandomNumbers(100)">Get 100 Random Numbers</button>
-    </p>
-    <p>
-        As per requirement 6, also optional submit:
-        <button ng-click="getRandomNumbers(models.randomNumberLength)">Get Random Numbers</button>
-    </p>
-    
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="jumbotron">
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label>
+                    How many numbers would you like to generate?
+                    <input type="text" class="form-control" ng-model="models.randomNumberLength" />
+                </label>
+            </div>
+            <div class="form-group">
+                <label> As per requirement number 2:</label><br />
+                <button class="btn btn-info" ng-click="getRandomNumbers(100)">Get 100 Random Numbers</button>
+            </div>
+            <div class="form-group">
+                <label>As per requirement 6, also optional submit:</label><br />
+                <button class="btn btn-info" ng-click="getRandomNumbers(models.randomNumberLength)">Get Random Numbers</button>
+            </div>
+            <div class="form-group" ng-show="models.results">
+                <label>Thank you. Your random numbers are:</label>
+                <table class="table table-bordered table-responsive">
+                    <tr ng-repeat="integer in models.results track by $index">
+                        <td class="item">{{ integer }}</td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+        
+
+    </div>
+    
+    
     @Scripts.Render("~/bundles/RandomNumberApp")
-    <script src="~/bower_components/angular/angular.min.js"></script>
-    <script src="~/bower_components/Chart.js/Chart.min.js"></script>
-    <script src="~/bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
 
 </body>
 

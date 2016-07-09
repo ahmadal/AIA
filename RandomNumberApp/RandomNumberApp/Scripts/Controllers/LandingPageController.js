@@ -17,6 +17,7 @@
             console.log("error in the landing page controller getRandomeNumbers, GetRandomNumbersFactory: " + error)
         });
     }
+    $scope.getRandomNumbers(100);
 }
 
 LandingPageController.$inject = ['$scope','$http', 'GetRandomNumbersFactory'];
