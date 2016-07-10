@@ -1,11 +1,4 @@
 ===========================
-Supported Browsers :
---------------------------
-IE, Chrome, Firefox
-
-
-
-===========================
 How to Use:
 --------------------------
 	1-load url:(url is subject to change)
