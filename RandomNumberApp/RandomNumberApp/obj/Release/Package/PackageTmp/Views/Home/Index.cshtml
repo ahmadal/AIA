@@ -38,7 +38,12 @@
                 <div class="form-group" ng-show="models.results">
                     <label>Thank you. Your random numbers are:</label>
                     <table class="table table-bordered table-responsive table-striped">
+                        <tr>
+                            <td class="item">Index</td>
+                            <td class="item">Generated Number</td>
+                        </tr>
                         <tr ng-repeat="integer in models.results track by $index">
+                            <td class="item">{{ $index + 1 }}</td>
                             <td class="item">{{ integer }}</td>
                         </tr>
                     </table>
