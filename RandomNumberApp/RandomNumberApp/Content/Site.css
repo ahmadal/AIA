@@ -1,3 +1,23 @@
-﻿tr{
+﻿.jumbotron{
+    color:#73a6bf;
+    background: floralwhite;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.jumbotron h1{
+    font-weight:bold;
+}
+tr{
+    text-align:center;
+}
+button.btn{
     text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    color: darkblue;
+    border-style: solid !important;
+}
+canvas{
+    background-color:antiquewhite;
 }

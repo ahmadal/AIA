@@ -6,7 +6,6 @@
             url: "https://qrng.anu.edu.au/API/jsonI.php?length=" + length + "&type=uint8"
         })
         .then(function sucessCallback(response) {
-            console.log("success");
             deferredObject.resolve(response.data);
 
         }, function errorCallback(error) {
