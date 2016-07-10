@@ -1,0 +1,28 @@
+===========================
+Supported Browsers :
+--------------------------
+IE, Chrome, Firefox
+
+
+
+===========================
+How to Use:
+--------------------------
+	1-load url:(url is subject to change)
+
+		http://randomnumberapp20160710095918.azurewebsites.net/
+		
+		page will download a .txt file with 100 randomly generated integers as well as display the numbers on a line chart in addition to displaying in a table
+		
+	2- type a positive integer in the text field
+		
+		button next to text field will update with the number inputted
+		clicking the Get (input number) Random Numbers will refresh table and chart with newly generated numbers 
+		also a .txt file containing the numbers will be downloaded. 
+		
+	3- click the Get 100 Random Numbers button
+		table and line chart will update also
+		page will download a .txt file with 100 randomly generated integers as well as display the numbers on a line chart in addition to displaying in a table
+
+
+
