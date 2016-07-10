@@ -127,12 +127,69 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chart.js\Chart.js" />
+    <Content Include="chart.js\Chart.min.js" />
+    <Content Include="chart.js\gulpfile.js" />
+    <Content Include="chart.js\samples\bar.html" />
+    <Content Include="chart.js\samples\doughnut.color.html" />
+    <Content Include="chart.js\samples\doughnut.html" />
+    <Content Include="chart.js\samples\line-customTooltips.html" />
+    <Content Include="chart.js\samples\line.html" />
+    <Content Include="chart.js\samples\pie-customTooltips.html" />
+    <Content Include="chart.js\samples\pie.html" />
+    <Content Include="chart.js\samples\polar-area.html" />
+    <Content Include="chart.js\samples\radar.html" />
+    <Content Include="chart.js\src\Chart.Bar.js" />
+    <Content Include="chart.js\src\Chart.Core.js" />
+    <Content Include="chart.js\src\Chart.Doughnut.js" />
+    <Content Include="chart.js\src\Chart.Line.js" />
+    <Content Include="chart.js\src\Chart.PolarArea.js" />
+    <Content Include="chart.js\src\Chart.Radar.js" />
+    <Content Include="Content\angular-chart.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Controllers\LandingPageController.js" />
     <Content Include="Scripts\Controllers\RandomNumberApp.js" />
-    <Content Include="Scripts\Factories\GetRandomNumbersFactory.js" />
+    <Content Include="Scripts\Controllers\GetRandomNumbersFactory.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="chart.js\.codeclimate.yml" />
+    <Content Include="chart.js\.eslintignore" />
+    <Content Include="chart.js\.eslintrc" />
+    <Content Include="chart.js\.npmignore" />
+    <Content Include="chart.js\.travis.yml" />
+    <Content Include="chart.js\bower.json" />
+    <Content Include="chart.js\composer.json" />
+    <Content Include="chart.js\CONTRIBUTING.md" />
+    <Content Include="chart.js\docs\00-Getting-Started.md" />
+    <Content Include="chart.js\docs\01-Line-Chart.md" />
+    <Content Include="chart.js\docs\02-Bar-Chart.md" />
+    <Content Include="chart.js\docs\03-Radar-Chart.md" />
+    <Content Include="chart.js\docs\04-Polar-Area-Chart.md" />
+    <Content Include="chart.js\docs\05-Pie-Doughnut-Chart.md" />
+    <Content Include="chart.js\docs\06-Advanced.md" />
+    <Content Include="chart.js\docs\07-Notes.md" />
+    <Content Include="chart.js\LICENSE.md" />
+    <Content Include="chart.js\package.json" />
+    <Content Include="chart.js\README.md" />
+    <None Include="Properties\PublishProfiles\RandomNumberApp20160710095918 - Web Deploy.pubxml" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -153,6 +210,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

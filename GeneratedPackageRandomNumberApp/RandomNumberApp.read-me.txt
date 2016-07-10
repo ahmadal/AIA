@@ -1,0 +1,27 @@
+===========================
+AIA Random Number Application:
+--------------------------
+Angularjs ASP.Net MVC application which is basically a website that will generate random numbers and store them in a .txt file.
+
+
+
+===========================
+About Usage:
+--------------------------
+	To learn about how to use the website please refer to: RandomNumberApp.how-to-use.txt
+	
+	
+	
+===========================
+About Deployment:
+--------------------------
+	To learn about how to use the website please refer to: RandomNumberApp.how-to-deploy.txt
+	
+	
+===========================
+Written By:
+--------------------------
+	Ahmad Almeshal
+	a.al-meshal@hotmail.com
+
+

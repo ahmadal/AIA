@@ -11,7 +11,6 @@ namespace RandomNumberApp
                       "~/Content/site.css"));
             bundles.Add(new ScriptBundle("~/bundles/RandomNumberApp")
             .IncludeDirectory("~/Scripts/Controllers", "*.js")
-            .IncludeDirectory("~/Scripts/Factories", "*.js")
             .Include("~/Scripts/RandomNumberApp.js"));
 
             BundleTable.EnableOptimizations = true;

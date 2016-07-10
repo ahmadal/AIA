@@ -1,0 +1,29 @@
+===========================
+Assumptions :
+--------------------------
+
+API is open - no authentication is required.
+
+API handles request validation (some validation done in front-end).
+
+API end-point is static.
+
+Numbers are positive integers only.
+
+Length entered is always greater than 1 (hence button says get x Random NumberS).
+
+100 random numbers should be generated and downloaded when user first loads website(based on requirement 2).
+
+Line graph axis y= generated numbers - x= index of number in array of generated numbers.
+
+Download is for the end-user (not a server).
+	
+File is automatically downloaded when random numbers are generated.
+
+Store numbers as array in txt file.
+
+Requirement 6 (no server post pack) <- assumed this means there is no DB to update?
+
+	
+	
+	
